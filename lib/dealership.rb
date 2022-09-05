@@ -43,4 +43,10 @@ class Dealership
       'address' => @address
     }
   end
+
+  def average_price_of_car  
+    (total_value / @inventory.length).to_s
+    #i know i need a comma, but couldn't sort out how to add comma into
+    #the string without running out of time! :( 
+  end
 end
